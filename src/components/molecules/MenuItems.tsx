@@ -1,5 +1,5 @@
 import React, {FC} from 'react';
-import MenuItem from 'src/components/atoms/menuItem/MenuItem';
+import MenuItem from 'src/components/atoms/MenuItem';
 import NAVIGATION_MENU_ITEMS from 'src/components/constants/Constants';
 import style from './MenuItems.module.scss';
 NAVIGATION_MENU_ITEMS.map((e) => console.log(e));
