@@ -12,7 +12,7 @@
     "resolveJsonModule": true,
     "downlevelIteration": true,
     "paths": {
-      "src/*": ["./src/*"]
+      "swiper/*": ["./node_modules/swiper/*"]
     },
     "lib": ["esnext", "dom", "dom.iterable"],
     "sourceMap": true,
