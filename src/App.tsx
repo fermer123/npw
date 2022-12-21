@@ -1,11 +1,11 @@
 import React, {FC} from 'react';
-import Hero from './components/organizm/hero/Hero';
+import SwiperSlider from './components/swiperSlide/SwiperSlider';
 import Layout from './layout/Layout';
 
 const App: FC = () => {
   return (
     <Layout>
-      <Hero />
+      <SwiperSlider />
     </Layout>
   );
 };

@@ -1,5 +1,5 @@
 import React, {FC} from 'react';
-import MenuItems from 'src/components/molecules/MenuItems';
+import MenuItems from '../menuItems/MenuItems';
 import style from './Navbar.module.scss';
 
 const Navbar: FC = () => {
