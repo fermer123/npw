@@ -31,8 +31,8 @@ const Slider: FC<SliderProps> = ({children, title, className, ...rest}) => {
         modules={[Navigation, Pagination]}>
         <NavigationButton type='prev' onClick={onPrev} />
         {children}
+        <NavigationButton type='next' onClick={onNext} />
       </Swiper>
-      <NavigationButton type='next' onClick={onNext} />;
     </div>
   );
 };
