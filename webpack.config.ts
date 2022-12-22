@@ -18,6 +18,7 @@ const config: Configuration = {
     path: path.join(__dirname, 'build'),
     filename: 'build.js',
     clean: true,
+    assetModuleFilename: 'assets/[hash][ext][query]',
   },
   resolve: {
     extensions: ['.ts', '.tsx', '.js'],
@@ -66,10 +67,6 @@ const config: Configuration = {
           },
           'sass-loader',
         ],
-      },
-      {
-        test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
-        type: 'asset/resource',
       },
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,

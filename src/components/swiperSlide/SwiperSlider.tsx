@@ -1,28 +1,19 @@
 import React, {FC} from 'react';
 import Slider from 'src/components/slider/Slider';
 import {SwiperSlide} from 'swiper/react';
+import {HERO_IMAGES} from '../constants/Api';
 import style from './SwiperSlider.module.scss';
+
 const SwiperSlider: FC = () => {
   return (
-    <Slider slidesPerView={1}>
-      <SwiperSlide>
-        <div className={style.swiper_slide}>1</div>
-      </SwiperSlide>
-      <SwiperSlide>
-        <div style={{backgroundColor: 'blue'}} className={style.swiper_slide}>
-          2
-        </div>
-      </SwiperSlide>
-      <SwiperSlide>
-        <div style={{backgroundColor: 'green'}} className={style.swiper_slide}>
-          3
-        </div>
-      </SwiperSlide>
-      <SwiperSlide>
-        <div style={{backgroundColor: 'white'}} className={style.swiper_slide}>
-          4
-        </div>
-      </SwiperSlide>
+    <Slider slidesPerView={1} title='Slider'>
+      {HERO_IMAGES.map((e, idx) => (
+        <SwiperSlide key={idx}>
+          <div
+            style={{backgroundImage: `url(../../${e})`}}
+            className={style.swiper_slide}></div>
+        </SwiperSlide>
+      ))}
     </Slider>
   );
 };

@@ -10,7 +10,6 @@ import NavigationButton from '../NavigationBtn/NavigationButton';
 type SliderProps = {
   children: React.ReactNode | JSX.Element;
   title?: string;
-  className?: string;
 } & SwiperProps;
 
 const Slider: FC<SliderProps> = ({children, title, className, ...rest}) => {
@@ -24,7 +23,7 @@ const Slider: FC<SliderProps> = ({children, title, className, ...rest}) => {
 
   return (
     <div className={style.slider_container}>
-      <div className={className}>{title}</div>
+      {title && <div className={style.slider_container_title}>{title}</div>}
       <Swiper
         {...rest}
         onSwiper={(e) => setSwiperSlide(e)}
