@@ -1,5 +1,6 @@
 import React, {FC} from 'react';
 import style from './MenuItem.module.scss';
+
 type MenuItemProps = {
   label: string;
 };

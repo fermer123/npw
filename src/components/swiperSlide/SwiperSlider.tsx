@@ -11,7 +11,8 @@ const SwiperSlider: FC = () => {
         <SwiperSlide key={idx}>
           <div
             style={{backgroundImage: `url(../../${e})`}}
-            className={style.swiper_slide}></div>
+            className={style.swiper_slide}
+          />
         </SwiperSlide>
       ))}
     </Slider>

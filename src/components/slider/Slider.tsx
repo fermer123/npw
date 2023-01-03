@@ -7,6 +7,7 @@ import 'swiper/modules/pagination/pagination.scss';
 import {Navigation, Pagination} from 'swiper';
 
 import NavigationButton from '../NavigationBtn/NavigationButton';
+
 type SliderProps = {
   children: React.ReactNode | JSX.Element;
   title?: string;

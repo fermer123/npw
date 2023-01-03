@@ -1,6 +1,7 @@
 import React, {FC} from 'react';
 import Navbar from 'src/components/navbar/Navbar';
 import style from './Layout.module.scss';
+
 type LayoutProps = {
   children: React.ReactNode | JSX.Element;
 };

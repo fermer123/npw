@@ -19,5 +19,5 @@
     "noImplicitAny": true
   },
   "exclude": ["node_modules", "build"],
-  "include": ["src", "webpack.config.ts"]
+  "include": ["./src", "webpack.config.ts"]
 }

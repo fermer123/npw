@@ -8,7 +8,9 @@ const Navbar: FC = () => {
       <div className={style.navbar_container_logo}>Logo</div>
       <MenuItems />
       <div className={style.navbar_container_btn_group}>
-        <button className={style.navbar_container_btn_group_sign_in}>
+        <button
+          type='button'
+          className={style.navbar_container_btn_group_sign_in}>
           Sign in
         </button>
       </div>
