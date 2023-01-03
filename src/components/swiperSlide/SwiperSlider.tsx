@@ -13,7 +13,7 @@ const SwiperSlider: FC = () => {
           <img
             alt={e}
             // eslint-disable-next-line prefer-template
-            src={process.env.PUBLIC_URL + `src/${e}`}
+            src={e}
             className={style.swiper_slide}
           />
         </SwiperSlide>
