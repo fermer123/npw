@@ -6,11 +6,14 @@ import style from './SwiperSlider.module.scss';
 
 const SwiperSlider: FC = () => {
   return (
-    <Slider slidesPerView={1} title='Slider'>
+    <Slider slidesPerView={1}>
       {HERO_IMAGES.map((e, idx) => (
+        // eslint-disable-next-line react/no-array-index-key
         <SwiperSlide key={idx}>
-          <div
-            style={{backgroundImage: `url(../../${e})`}}
+          <img
+            alt={e}
+            // eslint-disable-next-line prefer-template
+            src={process.env.PUBLIC_URL + `src/${e}`}
             className={style.swiper_slide}
           />
         </SwiperSlide>

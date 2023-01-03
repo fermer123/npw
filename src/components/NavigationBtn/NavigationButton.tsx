@@ -12,6 +12,7 @@ const NavigationButton: FC<NavigationButtonProps> = ({icon, type, onClick}) => {
 
   return (
     <button
+      aria-label='btn'
       type='button'
       className={style.button_slider}
       style={controlStyles}
